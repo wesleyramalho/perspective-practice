@@ -6,17 +6,27 @@ body {
   align-items: center;
   margin: 0;
   background-color: #efefef;
-
 }
-.container { 
+.container {
   perspective: 40px;
-   
+
   &__card {
     width: 20em;
     height: 18em;
     background-color: white;
     box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.2);
-
-
   }
+}
+
+.hidden {
+  display: none;
+}
+
+#helper {
+  color: white;
+  padding: 0.2em;
+  border-radius: 5%;
+  background-color: grey;
+  position: absolute;
+  z-index: 0;
 }
