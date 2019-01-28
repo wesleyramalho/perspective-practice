@@ -20,7 +20,6 @@
       this._y = e.offsetTop + Math.floor(e.offsetHeight / 2);
     },
     show: function() {
-      console.log(this);
       return "(" + this.x + ", " + this.y + ")";
     }
   };
