@@ -39,7 +39,8 @@ body {
     transition: transform 0.5s;
     -webkit-transition: transform 0.5s;
     -moz-transition: transform 0.5s;
-    -o-transition: transform 0.5s; }
+    -o-transition: transform 0.5s;
+    position: relative; }
     .container__card__img {
       border: solid white 15px;
       background-image: url("../img/me.jpeg");

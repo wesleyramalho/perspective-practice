@@ -46,6 +46,8 @@ body {
     -webkit-transition: transform 0.5s;
     -moz-transition: transform 0.5s;
     -o-transition: transform 0.5s;
+    position: relative;
+
 
     &__img {
       border: solid white 15px;
