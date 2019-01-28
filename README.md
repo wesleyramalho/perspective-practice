@@ -1,3 +1,3 @@
 ## Perspective practice
 
-![Layout](project-preview.png?raw=true "Layout")
+![Layout](img/project-preview.png?raw=true "Layout")
