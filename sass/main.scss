@@ -1,3 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+}
+
 body {
   width: 100%;
   min-height: 100vh;
@@ -9,7 +23,20 @@ body {
 }
 
 .container {
-  perspective: 40px;
+  perspective: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__title {
+    text-align: center;
+    margin-bottom: 1em;
+    font-size: 3em;
+    font-family: 'Major Mono Display', monospace;
+    font-weight: 100;
+
+  }
   &__card {
     width: 20em;
     height: 18em;
@@ -40,7 +67,7 @@ body {
       transition: opacity 0.4s;
       z-index: 200;
       &:hover {
-          opacity: 1;
+        opacity: 1;
       }
     }
   }
@@ -56,5 +83,5 @@ body {
   border-radius: 5%;
   background-color: grey;
   position: absolute;
-  z-index: 0;
+  z-index: 90;
 }
