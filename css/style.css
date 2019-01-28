@@ -42,7 +42,7 @@ body {
     -o-transition: transform 0.5s; }
     .container__card__img {
       border: solid white 15px;
-      background-image: url("https://avatars2.githubusercontent.com/u/21203415?s=400&u=5ddbd86cd958c8bbcb841fa8e5c1eae87a3efc0c&v=4");
+      background-image: url("../img/me.jpeg");
       background-size: cover;
       background-repeat: no-repeat;
       width: 100%;
