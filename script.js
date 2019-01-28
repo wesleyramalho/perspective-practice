@@ -27,7 +27,7 @@
 
   //is it time to update?
   let counter = 0;
-  let updateRate = 1;
+  let updateRate = 10;
   let isTimeToUpdate = function() {
     return counter++ % updateRate === 0;
   };
@@ -52,6 +52,19 @@
 
   let update = function(event) {
     mouse.updatePosition(event);
+    updateTransformStyle(
+      (mouse.y / card.offsetHeight / 2).toFixed(2),
+      (mouse.x / card.offsetWidth / 2).toFixed(2)
+    );
+  };
+
+  let updateTransformStyle = function(x, y) {
+    let style = "rotateX(" + x + "deg) rotateY(" + y + "deg )";
+    card.style.transform = style;
+    card.style.webkitTransform = style;
+    card.style.mozTransform = style;
+    card.style.msTransform = style;
+    card.style.oTransform = style;
   };
 
   let displayMousePositionHelper = function(event) {
