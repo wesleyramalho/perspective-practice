@@ -34,7 +34,8 @@
 
   //mouse event handlers
   let onMouseEnterHandler = function(event) {
-    helper.className = "";
+    //Not showing helper
+    //helper.className = "";
     update(event);
   };
 
@@ -69,7 +70,8 @@
 
   let displayMousePositionHelper = function(event) {
     let e = event || window.event;
-    helper.innerHTML = mouse.show();
+    //Not showing helper
+    // helper.innerHTML = mouse.show();
     helper.style =
       "top:" +
       (e.clientY - container.offsetTop) +
