@@ -1,6 +1,22 @@
-//testing sass
-.container {
-  &__squad {
-    background-color: red;
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background-color: #efefef;
+
+}
+.container { 
+  perspective: 40px;
+   
+  &__card {
+    width: 20em;
+    height: 18em;
+    background-color: white;
+    box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.2);
+
+
   }
 }
