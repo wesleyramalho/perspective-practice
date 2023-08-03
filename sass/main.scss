@@ -19,7 +19,7 @@ body {
   justify-content: center;
   align-items: center;
   margin: 0;
-  background-color: #efefef;
+  background-color: #f0d7e7;
 }
 
 .container {
@@ -40,7 +40,7 @@ body {
   &__card {
     width: 20em;
     height: 18em;
-    background-color: #ffdbf8;
+    background-color: #f0d7e7;
     box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.2);
     transition: transform 0.5s;
     -webkit-transition: transform 0.5s;
