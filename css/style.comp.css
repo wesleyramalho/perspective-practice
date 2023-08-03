@@ -1,16 +1,14 @@
 * {
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
 
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
-}
+  box-sizing: inherit; }
+
 html {
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 body {
   width: 100%;
@@ -19,53 +17,45 @@ body {
   justify-content: center;
   align-items: center;
   margin: 0;
-  background-color: #efefef;
-}
+  background-color: #efefef; }
 
 .container {
   perspective: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-
-  &__title {
+  align-items: center; }
+  .container__title {
     text-align: center;
     margin-bottom: 1em;
     font-size: 3em;
     font-family: 'Major Mono Display', monospace;
-    font-weight: 100;
-
-  }
-  &__card {
+    font-weight: 100; }
+  .container__card {
     width: 20em;
     height: 18em;
-    background-color: #ffdbf8;
+    background-color: white;
     box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.2);
     transition: transform 0.5s;
     -webkit-transition: transform 0.5s;
     -moz-transition: transform 0.5s;
     -o-transition: transform 0.5s;
-    position: relative;
-
-    &--tacila {
-      width: 22em;
-    }
-
-
-    &__img {
+    position: relative; }
+    .container__card__img {
       border: solid white 15px;
       background-image: url("../img/me.jpeg");
       background-size: cover;
       background-repeat: no-repeat;
       width: 100%;
-      height: 100%;
-      &--tacila {
-        background-image: url("../img/tac.png");
-      }
-    }
-
-    &__overlay {
+      height: 100%; }
+    .container__card__tacila {
+      border: solid white 15px;
+      background-image: url("../img/tac.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 100%; }
+    .container__card__overlay {
       opacity: 0;
       border: solid white 15px;
       position: absolute;
@@ -74,17 +64,12 @@ body {
       height: 100%;
       background-color: rgba(0, 0, 0, 0.5);
       transition: opacity 0.4s;
-      z-index: 200;
-      &:hover {
-        opacity: 1;
-      }
-    }
-  }
-}
+      z-index: 200; }
+      .container__card__overlay:hover {
+        opacity: 1; }
 
 .hidden {
-  display: none;
-}
+  display: none; }
 
 #helper {
   color: white;
@@ -92,5 +77,4 @@ body {
   border-radius: 5%;
   background-color: grey;
   position: absolute;
-  z-index: 90;
-}
+  z-index: 90; }
