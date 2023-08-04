@@ -22,6 +22,13 @@ body {
   background-color: #f0d7e7;
 }
 
+body.--tacila {
+  background-image: url("../img/heart-modified.png");
+  background-size: 5%;
+  background-repeat: repeat;
+  background-position: center center;
+}
+
 .container {
   perspective: 10px;
   display: flex;
@@ -35,7 +42,11 @@ body {
     font-size: 3em;
     font-family: 'Major Mono Display', monospace;
     font-weight: 100;
-
+    background: rgb(255 255 255 / 64%);
+    &::before {
+      background-size: 50%; /* Match the background-size with the parent */
+      filter: blur(10px); /* Adjust the blur amount as needed */
+    }
   }
   &__card {
     width: 20em;
@@ -93,4 +104,12 @@ body {
   background-color: grey;
   position: absolute;
   z-index: 90;
+}
+
+
+/* Adjust background size for mobile devices */
+@media screen and (max-width: 768px) {
+  body.--tacila {
+    background-size: 10%; /* Size for mobile devices */
+  }
 }
