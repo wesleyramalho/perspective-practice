@@ -110,3 +110,18 @@ body.--tacila {
     background-size: 10%; /* Size for mobile devices */
   }
 }
+
+
+/* Media query for mobile devices (up to 768px width) */
+@media screen and (max-width: 768px) {
+  .container__title--desktop {
+    display: none;
+  }
+}
+
+/* Media query for desktop devices (769px width and above) */
+@media screen and (min-width: 769px) {
+  .container__title--mobile {
+    display: none;
+  }
+}
